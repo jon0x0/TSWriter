@@ -1,0 +1,128 @@
+[
+  {
+    "file": "TSWriterOriginal-Regular.woff",
+    "family": "TSWriter Original",
+    "style": "Regular",
+    "source_sha256": "55bf5d59ad85db079f64183a7b4dd78895d918500f38b9ad8a81745660c12c3f"
+  },
+  {
+    "file": "TSWriterOriginal-Bold.woff",
+    "family": "TSWriter Original",
+    "style": "Bold",
+    "source_sha256": "0ee461afd3be2358a61bb85755157ed6ca7e8b3ff36e00edb11abd82062122d6"
+  },
+  {
+    "file": "TSWriterOriginal-Italic.woff",
+    "family": "TSWriter Original",
+    "style": "Italic",
+    "source_sha256": "4ba89c919e6db5f7a8614877d0e364310e9d0f930d065a2e6796ff5544036fdb"
+  },
+  {
+    "file": "TSWriterOriginal-BoldItalic.woff",
+    "family": "TSWriter Original",
+    "style": "Bold Italic",
+    "source_sha256": "cb66cc4b1b52c77d40f8f2a6ce79ba9bd8339cf15917cea81d9fb15bf45181db"
+  },
+  {
+    "file": "TSWriterUniversity-Regular.woff",
+    "family": "TSWriter University",
+    "style": "Regular",
+    "source_sha256": "6f59091edf1ba612eaf9fe1e7603e97e697d71e04df44c7bd18ce439e3ab9578"
+  },
+  {
+    "file": "TSWriterUniversity-Bold.woff",
+    "family": "TSWriter University",
+    "style": "Bold",
+    "source_sha256": "8b25ae2a3e5a679afd8700f29b99655fa947ff4ec1db8e789dfb48513baabe23"
+  },
+  {
+    "file": "TSWriterUniversity-Italic.woff",
+    "family": "TSWriter University",
+    "style": "Italic",
+    "source_sha256": "d2b2910d8040c6345b68cabfc445f9408d372fe084dc01d08b2b19d1cfafb1e7"
+  },
+  {
+    "file": "TSWriterUniversity-BoldItalic.woff",
+    "family": "TSWriter University",
+    "style": "Bold Italic",
+    "source_sha256": "3b63d11c41f4465d9a41fa7959aaa3fe20be655ec84314a124cfaa4dc8693698"
+  },
+  {
+    "file": "TSWriterCalifornia-Regular.woff",
+    "family": "TSWriter California",
+    "style": "Regular",
+    "source_sha256": "efa66dfcce0d1cd6527c0d31a944919df499b8765e6149617851b1060105c9d3"
+  },
+  {
+    "file": "TSWriterCalifornia-Bold.woff",
+    "family": "TSWriter California",
+    "style": "Bold",
+    "source_sha256": "2714db9bb01ec9b3873d058497a9557ce0a44cfa601855c0a55d68566b390df8"
+  },
+  {
+    "file": "TSWriterCalifornia-Italic.woff",
+    "family": "TSWriter California",
+    "style": "Italic",
+    "source_sha256": "544ea7e931d0316fb81e5012038eb918b095a89bf5b6a7136e903e21748e59c7"
+  },
+  {
+    "file": "TSWriterCalifornia-BoldItalic.woff",
+    "family": "TSWriter California",
+    "style": "Bold Italic",
+    "source_sha256": "0cb34b857040c981e349487f12e99ec57f9e0cd713311ac3418ee6d44a656b25"
+  },
+  {
+    "file": "TSWriterCory-Regular.woff",
+    "family": "TSWriter Cory",
+    "style": "Regular",
+    "source_sha256": "1a0d7cb9c33de7d9d731b5f60746d42c238a2b040c07441be9d03294a5b7d7db"
+  },
+  {
+    "file": "TSWriterCory-Bold.woff",
+    "family": "TSWriter Cory",
+    "style": "Bold",
+    "source_sha256": "bc69271094bfde570043c9fbe2f898a743e631cafa3cd76b9cb31c79acef80cf"
+  },
+  {
+    "file": "TSWriterCory-Italic.woff",
+    "family": "TSWriter Cory",
+    "style": "Italic",
+    "source_sha256": "9eee47863d292a2cf787c3686e9f0c08f8c888aad1e1745c6d6f84de388e3597"
+  },
+  {
+    "file": "TSWriterCory-BoldItalic.woff",
+    "family": "TSWriter Cory",
+    "style": "Bold Italic",
+    "source_sha256": "7e80511e3a5faf477a4c506dbba94f81d0cdd84b47037a1738d507fbd9f4c286"
+  },
+  {
+    "file": "TSWriterLWRoma-Regular.woff",
+    "family": "TSWriter LW Roma",
+    "style": "Regular",
+    "source_sha256": "7dbc285c73a7ad642eca50a25cdea951b27d787e48e97f600fa8cb26a4f28411"
+  },
+  {
+    "file": "TSWriterLWRoma-Bold.woff",
+    "family": "TSWriter LW Roma",
+    "style": "Bold",
+    "source_sha256": "6600994a6ab7ea9b67a4ca31b57a8f7a2e05bf648d86d188ad44d059ef85643f"
+  },
+  {
+    "file": "TSWriterLWRoma-Italic.woff",
+    "family": "TSWriter LW Roma",
+    "style": "Italic",
+    "source_sha256": "68b1ead064419675be9407d1e1e804c55747dbb4ff9ff74622bd38e94e138373"
+  },
+  {
+    "file": "TSWriterLWRoma-BoldItalic.woff",
+    "family": "TSWriter LW Roma",
+    "style": "Bold Italic",
+    "source_sha256": "4b3870134d8a1cec720b536caaa1508adacef731acc8df8abc0ad7ba21265543"
+  },
+  {
+    "file": "SirClive.woff",
+    "family": "SirClive",
+    "style": "Regular",
+    "source_sha256": "746e9e22ed5d7f62afd2787cef58ee2cf41f023fb2be2981c30208e32fece10e"
+  }
+]

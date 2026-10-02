@@ -56,3 +56,17 @@ python -m http.server 8000 --directory docs
 
 `docs/tools/` scripts must match their `desktop/` originals. Font ZIPs are
 release assets, preserving the included notices.
+
+## Homepage rich-text sample
+
+The homepage includes a static HTML conversion of `docs/downloads/introexport.rtf`,
+editable locally in the browser. It does not parse arbitrary RTF or save edits.
+The original download and LibreOffice reference screenshot remain available.
+
+To regenerate after replacing the RTF, export it with LibreOffice using
+`--headless --convert-to "html:HTML (StarWriter)" --outdir build/rtf-web`, then run
+`python tools/build_web_sample.py build/rtf-web/introexport.html /path/to/desktop/font-package`.
+This requires FontTools. The script uses the desktop package manifest to preserve
+font family names and generate WOFF files, and retains the applicable notices.
+It adapts this sample's single left-floating PNG picture and uses 200% type sizes
+for readable browser display. Check the live layout after regeneration.
