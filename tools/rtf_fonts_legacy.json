@@ -1,0 +1,92 @@
+[
+  {
+    "native": "Original",
+    "family": "Arial",
+    "category": "swiss",
+    "half_points": 18
+  },
+  {
+    "native": "BSW 9",
+    "family": "Arial",
+    "category": "swiss",
+    "half_points": 18
+  },
+  {
+    "native": "University 6",
+    "family": "Times New Roman",
+    "category": "roman",
+    "half_points": 12
+  },
+  {
+    "native": "University 12",
+    "family": "Times New Roman",
+    "category": "roman",
+    "half_points": 24
+  },
+  {
+    "native": "Courier 8",
+    "family": "Courier New",
+    "category": "modern",
+    "half_points": 16
+  },
+  {
+    "native": "Courier 12",
+    "family": "Courier New",
+    "category": "modern",
+    "half_points": 24
+  },
+  {
+    "native": "Sinclair 10",
+    "family": "Courier New",
+    "category": "modern",
+    "half_points": 20
+  },
+  {
+    "native": "California 12",
+    "family": "Arial",
+    "category": "swiss",
+    "half_points": 24
+  },
+  {
+    "native": "Cory 12",
+    "family": "Arial",
+    "category": "swiss",
+    "half_points": 24
+  },
+  {
+    "native": "Dwinelle 9",
+    "family": "Arial",
+    "category": "swiss",
+    "half_points": 18
+  },
+  {
+    "native": "Roma 9",
+    "family": "Times New Roman",
+    "category": "roman",
+    "half_points": 18
+  },
+  {
+    "native": "LW Roma 9",
+    "family": "Times New Roman",
+    "category": "roman",
+    "half_points": 18
+  },
+  {
+    "native": "LW Cal 9",
+    "family": "Arial",
+    "category": "swiss",
+    "half_points": 18
+  },
+  {
+    "native": "LW Greek 9",
+    "family": "Arial",
+    "category": "swiss",
+    "half_points": 18
+  },
+  {
+    "native": "LW Barrows 9",
+    "family": "Arial",
+    "category": "swiss",
+    "half_points": 18
+  }
+]

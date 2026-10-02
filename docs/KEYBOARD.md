@@ -1,0 +1,30 @@
+# TSWriter cartridge keyboard commands
+
+Both Shifts means Caps Shift + Symbol Shift. Fuse Tab emulates both together.
+
+| Area | Keys | Action |
+|---|---|---|
+| Typing | Letters / digits / Space | Insert text. Caps Shift + letter gives uppercase. |
+| Typing | Enter; Caps Shift + 0 | New paragraph; Backspace. |
+| Typing | Symbol Shift + 1 / C / V / T / Z | Type ! / ? / slash / > / colon. These are punctuation, not edit commands. |
+| Typing | Symbol Shift + M / N / O / P | Type period / comma / semicolon / quotation mark. |
+| Typing | Both Shifts, then release (Fuse: tap Tab) | Insert five spaces. |
+| Movement | Caps Shift + 5 / 8 / 7 / 6 | Left / right / up / down. Fuse arrow keys provide these chords. |
+| Movement | Symbol Shift + Left / Right | Jump to document start / end. On hardware, use both Shifts + 5 / 8. |
+| Movement | Symbol Shift + Up / Down | Page up / down (ten layout lines). On hardware, use both Shifts + 7 / 6. |
+| Movement | Both Shifts + H / L | Pan wide ECM view left / right. Narrow pages do not pan. |
+| Selection | Hold PC Shift first, then an arrow (Fuse) | Start selecting. Further arrows keep extending the selection after Shift is released. |
+| Selection | Edit → Mark selection, then arrows | Start persistent selection using the menu; useful on a physical TS2068. |
+| Selection | Caps Shift + Space; Edit → Clear selection | Clear the selection without deleting text. Applying a style also clears it. |
+| Editing | Symbol Shift + X / Y | Cut / paste. Both Shifts + X / Y also work. |
+| Editing | Both Shifts + C / Z | Copy / undo. Up to five undo states, space permitting. |
+| Editing | Edit → Find | Search forward, ignoring case, with wraparound. Enter repeats the previous query; Caps Shift + Space cancels. |
+| Menus | Symbol Shift + F / E / W / S / I | File / Edit / View / Style / Insert. Both Shifts also work. |
+| Menus | Both Shifts + T / V | Type / View. |
+| Menus | Arrows; Enter; Caps Shift + Space | Navigate; activate; dismiss. Help/About also provide Enter to continue or return. |
+| Pointer | Hold both Shifts + Q / A / O / P | Move up / down / left / right. Fuse Tab holds both emulated Shifts. |
+| Pointer | Hold both Shifts + Space | Click. Keep held and move with Q/A/O/P to drag a selection. |
+| Cropping | Arrows; hold Shift first, then arrow | Move the crop rectangle by 8 pixels; resize the active corner. |
+| Cropping | Both Shifts alone (Fuse: tap Tab) | Switch the active crop corner. |
+| Cropping | Enter; C or Caps Shift + Space; H | Insert crop; cancel crop; show/hide crop instructions. |
+| Tape | Enter; Space during transfer | Start loading/saving/exporting; abort an active tape transfer. |

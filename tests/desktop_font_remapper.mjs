@@ -1,0 +1,13 @@
+import fs from 'node:fs';import vm from 'node:vm';import assert from 'node:assert/strict';
+const script=fs.readFileSync('desktop/font-package/prepare-rtf.js','utf8');const context=vm.createContext({});vm.runInContext(script,context);
+const newer=fs.readFileSync('desktop/font-package/font-sample.rtf','latin1');
+const old=JSON.parse(fs.readFileSync('tools/rtf_fonts_legacy.json'));
+const names=JSON.parse(fs.readFileSync('tools/rtf_fonts.json'));
+const doc=rows=>'{\\rtf1{\\fonttbl'+rows.map((f,id)=>`{\\f${id}\\f${f.category}\\fcharset0 ${f.family};}`).join('')+'}\\f0 Hello.}';
+const legacy=doc(old),prepared=doc(names.slice(0,15));
+assert.notEqual(legacy,prepared);assert.equal(context.prepareRTF(legacy),prepared);assert.equal(context.prepareRTF(newer),newer);
+assert.equal(context.prepareRTF(prepared),prepared);
+assert.throws(()=>context.prepareRTF(legacy.replace('Arial;','Unexpected;')));
+assert.throws(()=>context.prepareRTF('{\\rtf1 text without fonts}'));
+const image='\n{\\pict\\pngblip 89504e47}\n';assert.equal(context.prepareRTF(legacy.slice(0,-1)+image+'}'),prepared.slice(0,-1)+image+'}');
+console.log('PASS legacy font remapping, already-prepared input, refusal to guess, and unchanged picture/text payload');

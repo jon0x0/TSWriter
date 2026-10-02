@@ -1,0 +1,18 @@
+{
+  "source_sha256": "d63be47c3362b5867b054971c15923bf2e0a865fa7a31c51572b910fb76f7232",
+  "source": "Liberation Mono Regular 2.1.4",
+  "license": "OFL-Liberation.txt",
+  "courier8_hints": "cap/ascender top 1, x-height top 2, baseline row 5, descenders through row 7; isolated glyph cells",
+  "strikes": [
+    {
+      "file": "Courier8.raw",
+      "pitch": 6,
+      "sha256": "68bf8071152f12029cc46715b140b37be267d20b14f7ad787501d7d13fb7243a"
+    },
+    {
+      "file": "Courier12.raw",
+      "pitch": 8,
+      "sha256": "d2ff345c008a9e3d1c5bd35daa9101579209edd254a963d833e4af6cd69a73ff"
+    }
+  ]
+}

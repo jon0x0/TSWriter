@@ -1,0 +1,98 @@
+[
+  {
+    "native": "Original",
+    "family": "TSWriter Original",
+    "category": "swiss",
+    "half_points": 18
+  },
+  {
+    "native": "BSW 9",
+    "family": "TSWriter BSW",
+    "category": "swiss",
+    "half_points": 18
+  },
+  {
+    "native": "University 6",
+    "family": "TSWriter University",
+    "category": "roman",
+    "half_points": 12
+  },
+  {
+    "native": "University 12",
+    "family": "TSWriter University",
+    "category": "roman",
+    "half_points": 24
+  },
+  {
+    "native": "Courier 8",
+    "family": "TSWriter Courier",
+    "category": "modern",
+    "half_points": 16
+  },
+  {
+    "native": "Courier 12",
+    "family": "TSWriter Courier",
+    "category": "modern",
+    "half_points": 24
+  },
+  {
+    "native": "Sinclair 10",
+    "family": "SirClive",
+    "category": "modern",
+    "half_points": 20
+  },
+  {
+    "native": "California 12",
+    "family": "TSWriter California",
+    "category": "swiss",
+    "half_points": 24
+  },
+  {
+    "native": "Cory 12",
+    "family": "TSWriter Cory",
+    "category": "swiss",
+    "half_points": 24
+  },
+  {
+    "native": "Dwinelle 9",
+    "family": "TSWriter Dwinelle",
+    "category": "swiss",
+    "half_points": 18
+  },
+  {
+    "native": "Roma 9",
+    "family": "TSWriter Roma",
+    "category": "roman",
+    "half_points": 18
+  },
+  {
+    "native": "LW Roma 9",
+    "family": "TSWriter LW Roma",
+    "category": "roman",
+    "half_points": 18
+  },
+  {
+    "native": "LW Cal 9",
+    "family": "TSWriter LW Cal",
+    "category": "swiss",
+    "half_points": 18
+  },
+  {
+    "native": "LW Greek 9",
+    "family": "TSWriter LW Greek",
+    "category": "swiss",
+    "half_points": 18
+  },
+  {
+    "native": "LW Barrows 9",
+    "family": "TSWriter LW Barrows",
+    "category": "swiss",
+    "half_points": 18
+  },
+  {
+    "native": "Timex 8",
+    "family": "TSWriter Timex",
+    "category": "modern",
+    "half_points": 16
+  }
+]

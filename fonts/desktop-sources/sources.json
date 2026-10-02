@@ -1,0 +1,157 @@
+[
+  {
+    "file": "Oxanium.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/oxanium/Oxanium%5Bwght%5D.ttf",
+    "sha256": "2ce01d946e1e1ffc8d7eecfffbda8623bedd63eaf811a20488c4b69af45babb0"
+  },
+  {
+    "file": "OFL-Oxanium.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/oxanium/OFL.txt",
+    "sha256": "fe17c0f2581d71b4e1ea7e636e7f4877c29223e11bb1dd1a871e8c3f2a86336b"
+  },
+  {
+    "file": "UnifrakturMaguntia.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/unifrakturmaguntia/UnifrakturMaguntia-Book.ttf",
+    "sha256": "d64afc0547059dd2e4a78da48bda0aba0a9901be58c7f8c201a8b2b6b4492cc8"
+  },
+  {
+    "file": "OFL-UnifrakturMaguntia.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/unifrakturmaguntia/OFL.txt",
+    "sha256": "96199bf9ff12dd471a66911dee95440737b437e7f5a6fd30e9e950c16d66e8df"
+  },
+  {
+    "file": "LICENSE-DejaVu.txt",
+    "url": "https://raw.githubusercontent.com/dejavu-fonts/dejavu-fonts/master/LICENSE",
+    "sha256": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93"
+  },
+  {
+    "file": "LiberationSans-Regular.ttf",
+    "source": "Installed Windows font; internal copyright/license retained",
+    "sha256": "597589a852868f782c68e25112bab7785b34bc726f6160dca1519198c6e8c762"
+  },
+  {
+    "file": "LiberationSans-Bold.ttf",
+    "source": "Installed Windows font; internal copyright/license retained",
+    "sha256": "cf445da2ab82045d7c8a00a5d9c29a6e90b0579705e28b1f3e02d5b3a0a91ab8"
+  },
+  {
+    "file": "LiberationSans-Italic.ttf",
+    "source": "Installed Windows font; internal copyright/license retained",
+    "sha256": "505289efd5caa319d7e178cbf395186798c7470fc39e47df1de5f6406a5bf5cb"
+  },
+  {
+    "file": "LiberationSans-BoldItalic.ttf",
+    "source": "Installed Windows font; internal copyright/license retained",
+    "sha256": "60ba7f56d3d5909f69163c6434556b0ce04fd4c1f3e10682dcdbd518588d4760"
+  },
+  {
+    "file": "LiberationMono-Regular.ttf",
+    "source": "Installed Windows font; internal copyright/license retained",
+    "sha256": "d63be47c3362b5867b054971c15923bf2e0a865fa7a31c51572b910fb76f7232"
+  },
+  {
+    "file": "LiberationMono-Bold.ttf",
+    "source": "Installed Windows font; internal copyright/license retained",
+    "sha256": "111f3f8a3369628b9b5a6176d0a96d90fabd90dbdcba940c1a6610f68b1a0b25"
+  },
+  {
+    "file": "LiberationMono-Italic.ttf",
+    "source": "Installed Windows font; internal copyright/license retained",
+    "sha256": "7017561bf5c25b7a8d98b2f180ec34a83c4fc7f94aa46b408ce0ea633ec872f7"
+  },
+  {
+    "file": "LiberationMono-BoldItalic.ttf",
+    "source": "Installed Windows font; internal copyright/license retained",
+    "sha256": "e3018454adf587f74e505d13d2a6efa0992a1a51f25c42c7c48d39a70b73034a"
+  },
+  {
+    "file": "LiberationSerif-Regular.ttf",
+    "source": "Installed Windows font; internal copyright/license retained",
+    "sha256": "a82e5f4350d6b66d44d1c77f718d7c658a23ae6097c115748f5ab58c0723af59"
+  },
+  {
+    "file": "LiberationSerif-Bold.ttf",
+    "source": "Installed Windows font; internal copyright/license retained",
+    "sha256": "1226cecb60336d5ab5401c8ecb608cd93fe2576df85ec1f2410eac524878323c"
+  },
+  {
+    "file": "LiberationSerif-Italic.ttf",
+    "source": "Installed Windows font; internal copyright/license retained",
+    "sha256": "9bfb44ebfa0723273129484a6d860bbac2c9ec135aac2a09f5e5bb60ca85898c"
+  },
+  {
+    "file": "LiberationSerif-BoldItalic.ttf",
+    "source": "Installed Windows font; internal copyright/license retained",
+    "sha256": "cb3a04cde5ddde7bd3b82ba0781a41249b24151a4c2a4f47eebb1e3199f3dd5b"
+  },
+  {
+    "file": "DejaVuSans.ttf",
+    "source": "Installed Windows font; internal copyright/license retained",
+    "sha256": "7da195a74c55bef988d0d48f9508bd5d849425c1770dba5d7bfc6ce9ed848954"
+  },
+  {
+    "file": "DejaVuSans-Bold.ttf",
+    "source": "Installed Windows font; internal copyright/license retained",
+    "sha256": "e6476c1b80502924294eed40894c5b18e06c181444ca953e5334262df9c27724"
+  },
+  {
+    "file": "DejaVuSans-Oblique.ttf",
+    "source": "Installed Windows font; internal copyright/license retained",
+    "sha256": "4af75fa16ee6d3ad43e1ecec41862c24954af26a55c6bb1ebb27bd486a50f5f4"
+  },
+  {
+    "file": "DejaVuSans-BoldOblique.ttf",
+    "source": "Installed Windows font; internal copyright/license retained",
+    "sha256": "eb436dca0c2594b73d8b603b892e374fdfd8d885d25ffb4f18df4c4c0b49e50f"
+  },
+  {
+    "file": "DejaVuSansCondensed.ttf",
+    "source": "Installed Windows font; internal copyright/license retained",
+    "sha256": "8550cd5ca1acb65a8fc7877c46939cd0b4d909f8e7bc1e24716873d918c5e549"
+  },
+  {
+    "file": "DejaVuSansCondensed-Bold.ttf",
+    "source": "Installed Windows font; internal copyright/license retained",
+    "sha256": "38098d0b8edd8430a0f53fb2831b5d36037563a998a620d3c87a4d7591766d20"
+  },
+  {
+    "file": "DejaVuSansCondensed-Oblique.ttf",
+    "source": "Installed Windows font; internal copyright/license retained",
+    "sha256": "dc3526fa25fae4278c4e34b47d4c049b6923421c70921032a0db11bfe9c1b0cf"
+  },
+  {
+    "file": "DejaVuSansCondensed-BoldOblique.ttf",
+    "source": "Installed Windows font; internal copyright/license retained",
+    "sha256": "43f9fd6b77edf174553cf94857c77c63de7ddb0c6751fd1390e73223518e128f"
+  },
+  {
+    "file": "Twobit Bold Italic.otf",
+    "url": "https://www.pixelsagas.com/wp-content/uploads/2014/07/PS_Twobit.zip",
+    "sha256": "683951afcdfd016fbf63fe4acc56e53e9529e1c9419945a3fbe1d5a102dc0ef9"
+  },
+  {
+    "file": "Twobit Bold.otf",
+    "url": "https://www.pixelsagas.com/wp-content/uploads/2014/07/PS_Twobit.zip",
+    "sha256": "2ff031de2bcaff2a43ae6217ed415cde168b99f4031b71ff43dfa00f6f4255f4"
+  },
+  {
+    "file": "Twobit Italic.otf",
+    "url": "https://www.pixelsagas.com/wp-content/uploads/2014/07/PS_Twobit.zip",
+    "sha256": "b92b5d51a7533d239b219ab04f563957ee86b6634a4958a22e4bf657afd01e03"
+  },
+  {
+    "file": "Twobit.otf",
+    "url": "https://www.pixelsagas.com/wp-content/uploads/2014/07/PS_Twobit.zip",
+    "sha256": "dfc9c446d94636d93c68cf02420a3e0670d60c3304af38af67b6ac98930231c4"
+  },
+  {
+    "file": "OFL-Twobit.txt",
+    "url": "https://www.pixelsagas.com/wp-content/uploads/2014/07/PS_Twobit.zip",
+    "sha256": "b33764c95f1fb36567af758f20cf217d9993faa3c8cb47d5bf19b3ab098d1a99"
+  },
+  {
+    "file": "PS_Twobit.zip",
+    "url": "https://www.pixelsagas.com/wp-content/uploads/2014/07/PS_Twobit.zip",
+    "sha256": "9ad953241e4a11cbbeb0de7ff65c30c203a73f02ddc21587ef7d34bd83f72904"
+  }
+]

@@ -1,0 +1,76 @@
+CopySelection:
+        call SelectionBounds
+        ld hl,(SelEnd)
+        ld de,(SelStart)
+        or a
+        sbc hl,de
+        ret z
+        ld (ClipPending),hl
+        ld de,CLIPCAP-2
+        or a
+        sbc hl,de
+        jp nc,ClipboardFailed
+        ld hl,(SelStart)
+        call PositionStyle
+        ld hl,CLIPBOARD
+        ld (hl),FORMAT_TOKEN
+        inc hl
+        ld a,(CurrentFont)
+        ld (hl),a
+        inc hl
+        ld a,(CurrentStyle)
+        ld (hl),a
+        ld hl,(SelStart)
+        ld de,TEXT
+        add hl,de
+        ld de,CLIPBOARD+3
+        ld bc,(ClipPending)
+        ldir
+        ld hl,(ClipPending)
+        ld de,3
+        add hl,de
+        ld (ClipLength),hl
+        call ImageGC
+        xor a
+        ld (FullFlag),a
+        ret
+PasteSelection:
+        ld hl,(ClipLength)
+        ld a,h
+        or l
+        ret z
+        call EditSpan
+        xor a
+        ld (TokenFont),a
+        ld (TokenStyle),a
+        ld hl,CLIPBOARD
+        ld bc,(ClipLength)
+PasteFindFormat:
+        ld a,b
+        or c
+        jp z,PasteAppendRestore
+        ld a,(hl)
+        inc hl
+        dec bc
+        cp FORMAT_TOKEN
+        jp nz,PasteFindFormat
+        ld a,(hl)
+        ld (TokenFont),a
+        inc hl
+        ld a,(hl)
+        ld (TokenStyle),a
+        inc hl
+        dec bc
+        dec bc
+        jp PasteFindFormat
+PasteAppendRestore:
+        call AppendRestore
+        ld de,CLIPBOARD
+        or a
+        sbc hl,de
+        ld (SpliceCount),hl
+        ld hl,(ClipLength)
+        ld (SpliceCaret),hl
+        ld hl,CLIPBOARD
+        ld (SpliceSource),hl
+        jp Splice

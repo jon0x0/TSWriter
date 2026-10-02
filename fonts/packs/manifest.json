@@ -1,0 +1,86 @@
+[
+  {
+    "file": "BSW9.raw",
+    "sha256": "b0ef3ce094cc7b6a37d917653d78887d20e7d0f35b33605bb23ed4d8c95b26dd",
+    "baseline": 6,
+    "height": 9
+  },
+  {
+    "file": "University6.raw",
+    "sha256": "c36ffddf59c3008813734db0051ffccc36edcd9b6996b12261d654d913be0ccb",
+    "baseline": 4,
+    "height": 6
+  },
+  {
+    "file": "University12.raw",
+    "sha256": "f19d0fc511f0a6063e2a9a0746039cebc2ef05a4a90e60b2a624a03414a2340f",
+    "baseline": 8,
+    "height": 12
+  },
+  {
+    "file": "Courier8.raw",
+    "sha256": "68bf8071152f12029cc46715b140b37be267d20b14f7ad787501d7d13fb7243a",
+    "baseline": 6,
+    "height": 8
+  },
+  {
+    "file": "Courier12.raw",
+    "sha256": "d2ff345c008a9e3d1c5bd35daa9101579209edd254a963d833e4af6cd69a73ff",
+    "baseline": 9,
+    "height": 12
+  },
+  {
+    "file": "Sinclair10.raw",
+    "sha256": "97b5740f2c1f33b0fd2eeda9bb1a2fa7b5a5f554e15f6ba0dcffb343708b4a3c",
+    "baseline": 7,
+    "height": 10
+  },
+  {
+    "file": "California12.raw",
+    "sha256": "3eea7391ae2b5409541bc19059633d7c679b7305fa28f134fd19d54432ec3b45",
+    "baseline": 8,
+    "height": 12
+  },
+  {
+    "file": "Cory12.raw",
+    "sha256": "c9d573d56fb7e739451164ab96c6a5279b9992751a454940dab664dbd2a82b11",
+    "baseline": 8,
+    "height": 12
+  },
+  {
+    "file": "Dwinelle9.raw",
+    "sha256": "dda67760949634eac228e8d563bd54da33d05558a6b1d13e3e19b7280fbf758b",
+    "baseline": 7,
+    "height": 9
+  },
+  {
+    "file": "Roma9.raw",
+    "sha256": "3b74ce46b15d174f5394a3282520f1f6bc74001f309728e884fe6c5b20acf214",
+    "baseline": 6,
+    "height": 9
+  },
+  {
+    "file": "LWRoma9.raw",
+    "sha256": "6a6ea6b52bce3f1898da8d5224c1165ee7fceedb222488d245b701922aa3511b",
+    "baseline": 5,
+    "height": 9
+  },
+  {
+    "file": "LWCal9.raw",
+    "sha256": "b253128d5d199b8104401b0f0ea19243ad8db853dc51669dd7454a9f42d4ad75",
+    "baseline": 6,
+    "height": 9
+  },
+  {
+    "file": "LWGreek9.raw",
+    "sha256": "34d5099ae3dcc41333e1c69e31c22f5e111b61c76ea8a8415eac9613db971e79",
+    "baseline": 5,
+    "height": 9
+  },
+  {
+    "file": "LWBarrows9.raw",
+    "sha256": "1d8f331dc79ef85ea29c2433190ca316dc5abb15435c450755dd48903ee9538b",
+    "baseline": 5,
+    "height": 9
+  }
+]

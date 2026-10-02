@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TSWriter - RTF import tape</title>
+<style>body{max-width:740px;margin:50px auto;padding:24px;font:17px/1.6 system-ui,sans-serif;color:#182c3c;background:#f2f5f6}main{background:white;padding:30px;border-radius:12px}h1{font-size:28px}label{display:block;font-weight:600;margin-top:24px}#download{display:inline-block;background:#164d71;color:white;padding:10px 18px;border-radius:6px}#download[hidden]{display:none}li{margin:8px 0}footer{margin-top:24px;font-size:14px}</style>
+<main><h1>RTF into TSWriter</h1>
+<p>Prepare a desktop RTF for TSWriter and package it into a cassette file. The TS2068 converts the prepared RTF into its native document format.</p>
+<ol><li>Choose an RTF below, review the reported changes, and download the import TAP.</li><li>In Fuse, turn off <strong>Options &gt; Media &gt; Auto-load media</strong>, then open the TAP using <strong>Media &gt; Tape &gt; Open</strong>.</li><li>In TSWriter, choose <strong>File &gt; Import RTF</strong>. Save your current document first: import replaces it.</li><li>Press Enter. Use Fuse's Tape &gt; Play (F8) if tape traps are disabled.</li><li>The editor returns automatically when loading finishes. Use File &gt; Save to tape to keep the native document.</li></ol>
+<label><input id="compatible" type="checkbox" checked> Improve desktop RTF compatibility</label>
+<p>Removes running headers/footers and document metadata; changes curly quotes, dashes and accented Latin letters to plain equivalents; keeps a field's stored displayed text. Body formatting and picture groups are retained. Uncheck to package the original bytes unchanged. Your original file is never overwritten.</p>
+<label for="rtf">RTF document</label><input id="rtf" type="file" accept=".rtf,application/rtf"><p id="status" role="status" aria-live="polite">Choose an RTF document.</p><a id="download" hidden>Download import TAP</a>
+<p><a id="compatible-download" hidden>Download prepared RTF for review</a></p>
+<style>#status{white-space:pre-line}</style>
+<p>Supports ASCII text, bold/italic/underline, left/center/right/justified alignment, approximate font/size and color mapping, and the indexed PNG pictures produced by TSWriter's own exporter. Tables, footnotes, other picture encodings and unsupported characters still need manual simplification. Page layout and style-sheet inheritance are approximate. Native text and images must fit in 30 KB.</p>
+<footer>Runs locally; nothing is uploaded. An import failure after loading begins clears the partial document. <a href="rtf-extractor.html">Extract an RTF export from tape</a></footer></main><script src="rtf-compatible.js"></script><script src="rtf-import.js"></script></html>

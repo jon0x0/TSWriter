@@ -1,0 +1,66 @@
+[
+  {
+    "name": "California 12",
+    "file": "California12.raw",
+    "bytes": 1114,
+    "sha256": "3eea7391ae2b5409541bc19059633d7c679b7305fa28f134fd19d54432ec3b45",
+    "source": "CALIF.cvt",
+    "derived": false
+  },
+  {
+    "name": "Cory 12",
+    "file": "Cory12.raw",
+    "bytes": 1210,
+    "sha256": "c9d573d56fb7e739451164ab96c6a5279b9992751a454940dab664dbd2a82b11",
+    "source": "CORY.cvt",
+    "derived": false
+  },
+  {
+    "name": "Dwinelle 9",
+    "file": "Dwinelle9.raw",
+    "bytes": 814,
+    "sha256": "dda67760949634eac228e8d563bd54da33d05558a6b1d13e3e19b7280fbf758b",
+    "source": "DWIN.cvt",
+    "derived": true
+  },
+  {
+    "name": "Roma 9",
+    "file": "Roma9.raw",
+    "bytes": 787,
+    "sha256": "3b74ce46b15d174f5394a3282520f1f6bc74001f309728e884fe6c5b20acf214",
+    "source": "ROMA.cvt",
+    "derived": false
+  },
+  {
+    "name": "LW Roma 9",
+    "file": "LWRoma9.raw",
+    "bytes": 706,
+    "sha256": "6a6ea6b52bce3f1898da8d5224c1165ee7fceedb222488d245b701922aa3511b",
+    "source": "LWROMA.cvt",
+    "derived": false
+  },
+  {
+    "name": "LW Cal 9",
+    "file": "LWCal9.raw",
+    "bytes": 715,
+    "sha256": "b253128d5d199b8104401b0f0ea19243ad8db853dc51669dd7454a9f42d4ad75",
+    "source": "LWCAL.cvt",
+    "derived": false
+  },
+  {
+    "name": "LW Greek 9",
+    "file": "LWGreek9.raw",
+    "bytes": 760,
+    "sha256": "34d5099ae3dcc41333e1c69e31c22f5e111b61c76ea8a8415eac9613db971e79",
+    "source": "LWGREEK.cvt",
+    "derived": false
+  },
+  {
+    "name": "LW Barrows 9",
+    "file": "LWBarrows9.raw",
+    "bytes": 742,
+    "sha256": "1d8f331dc79ef85ea29c2433190ca316dc5abb15435c450755dd48903ee9538b",
+    "source": "LWBarrows.cvt",
+    "derived": false
+  }
+]

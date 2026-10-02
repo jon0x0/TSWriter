@@ -1,0 +1,157 @@
+; A plain one-byte EOF deletion can only change the tail of its retained line.
+; Screen-bank helper: metadata only, no access to hidden document bytes.
+BackspaceStrip:
+        ld a,(CacheValid)
+        or a
+        ret z
+        ld a,(EditPending)
+        cp 1
+        ret nz
+        ld hl,(EditDelta)
+        inc hl
+        ld a,h
+        or l
+        ret nz
+        ld hl,(SpliceCount)
+        ld a,h
+        or l
+        ret nz
+        ld hl,(OldSelStart)
+        ld de,(OldSelEnd)
+        or a
+        sbc hl,de
+        ret nz
+        ld hl,(Cursor)
+        ld de,(Length)
+        or a
+        sbc hl,de
+        ret nz
+        ld hl,(SpliceStart)
+        or a
+        sbc hl,de
+        ret nz
+        inc de
+        ld hl,(SpliceEnd)
+        or a
+        sbc hl,de
+        ret nz
+        ld a,(ViewMode)
+        ld hl,LastMode
+        cp (hl)
+        ret nz
+        ld hl,(TopLine)
+        ld de,(LastTop)
+        or a
+        sbc hl,de
+        ret nz
+        ld hl,(PanX)
+        ld de,(LastPan)
+        or a
+        sbc hl,de
+        ret nz
+        ld hl,(CaretLine)
+        ld de,(TopLine)
+        or a
+        sbc hl,de
+        ld a,h
+        or a
+        ret nz
+        ld a,(RenderIndex)
+        cp l
+        ret nz
+        call Descriptor
+        ld d,h
+        ld e,l
+        ld bc,128
+        add hl,bc
+        ld b,2
+BackspaceStartEqual:
+        ld a,(de)
+        cp (hl)
+        ret nz
+        inc hl
+        inc de
+        djnz BackspaceStartEqual
+        ; Old length must be exactly one byte longer.
+        ld c,(hl)
+        inc hl
+        ld b,(hl)
+        inc hl
+        push hl
+        ex de,hl
+        ld e,(hl)
+        inc hl
+        ld d,(hl)
+        inc hl
+        inc de
+        ld a,b
+        cp d
+        jr nz,BackspaceDescriptorFail
+        ld a,c
+        cp e
+        jr nz,BackspaceDescriptorFail
+        ex de,hl
+        pop hl
+        ld b,4
+BackspaceShapeEqual:
+        ld a,(de)
+        cp (hl)
+        ret nz
+        inc hl
+        inc de
+        djnz BackspaceShapeEqual
+        call CompareLineFormat
+        ret nz
+        ld hl,(CaretX)
+        ld de,16
+        or a
+        sbc hl,de
+        jr nc,BackspaceEdge
+        ld hl,0
+BackspaceEdge:
+        ld a,(ViewMode)
+        or a
+        jr z,BackspaceHires
+        ld de,(PanX)
+        or a
+        sbc hl,de
+        jr nc,BackspaceColumn
+        ld hl,0
+        jr BackspaceColumn
+BackspaceHires:
+        srl h
+        rr l
+BackspaceColumn:
+        srl h
+        rr l
+        srl l
+        srl l
+        ld a,l
+        cp 32
+        ret nc
+        ld (StripStart),a
+        ld a,32
+        sub l
+        ld (PanColumns),a
+        ld h,0
+        add hl,hl
+        add hl,hl
+        add hl,hl
+        ld a,(ViewMode)
+        or a
+        jr nz,BackspaceColorEdge
+        add hl,hl
+        jr BackspaceStripReady
+BackspaceColorEdge:
+        ld de,(PanX)
+        add hl,de
+BackspaceStripReady:
+        ld (StripEdge),hl
+        xor a
+        ld (PanDirection),a
+        inc a
+        ld (StripActive),a
+        ret
+BackspaceDescriptorFail:
+        pop hl
+        ret

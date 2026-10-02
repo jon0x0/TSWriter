@@ -1,0 +1,27 @@
+import assert from 'node:assert/strict';import {createRequire} from 'node:module';
+const require=createRequire(import.meta.url),convert=require('../desktop/rtf-compatible.js');
+const run=s=>Buffer.from(convert(Buffer.from(s,'latin1')).bytes).toString('latin1');
+assert.equal(run(String.raw`{\rtf1\b\u233?clair}`),String.raw`{\rtf1 \b eclair}`);
+assert.equal(run(String.raw`{\rtf1\uc1 A\u8212\'97B{\uc0\u233}C}`),String.raw`{\rtf1 A--B{e}C}`);
+assert.equal(run(String.raw`{\rtf1 A{\header header {\field{\*\fldinst PAGE}{\fldrslt 2}}}B}`),String.raw`{\rtf1 AB}`);
+assert.equal(run(String.raw`{\rtf1 A{\field{\*\fldinst LINK}{\fldrslt\b link}}B}`),String.raw`{\rtf1 A{\b link}B}`);
+assert.equal(run(String.raw`{\rtf1\uc2\u8217??{\uc0\u8217}\u8217??}`),String.raw`{\rtf1 '{'}'}`);
+assert.equal(run(String.raw`{\rtf1 \'93Hello\'94 \'e9}`),String.raw`{\rtf1 "Hello" e}`);
+assert.equal(run(String.raw`{\rtf1{\pict\pngblip 89504e47}x}`),String.raw`{\rtf1 {\pict\pngblip 89504e47}x}`);
+assert.throws(()=>run(String.raw`{\rtf1\u8364?}`),/U\+20AC/);
+assert.throws(()=>run(String.raw`{\rtf1\trowd data}`),/trowd/);
+assert.throws(()=>run(String.raw`{\rtf1\ansicpg932 text}`),/1252/);
+assert.throws(()=>run(String.raw`{\rtf1 x`),/Incomplete/);
+assert.throws(()=>run(String.raw`{\rtf1\bin99 x}`),/binary/);
+console.log('PASS compatibility escaping, Unicode fallbacks/scope, CP1252, headers, fields, pictures and unsupported-content checks');
+// Exercise the file-selection UI without installing or automating a browser.
+const {default:vm}=await import('node:vm');const {default:fs}=await import('node:fs');
+const elements=Object.fromEntries(['rtf','status','download','compatible','compatible-download'].map(id=>[id,{hidden:true,addEventListener(k,f){this[k]=f;}}]));
+elements.compatible.checked=true;const original=Buffer.from(String.raw`{\rtf1\b\u233?clair}`);
+elements.rtf.files=[{name:'sample.rtf',size:original.length,arrayBuffer:async()=>original}];
+const blobs=[];const context={document:{getElementById:id=>elements[id]},Uint8Array,DataView,TextEncoder,TextDecoder,Blob,URL:{createObjectURL:b=>(blobs.push(b),'blob:'+blobs.length),revokeObjectURL(){}},makeTsWriterCompatible:convert};
+vm.runInNewContext(fs.readFileSync('desktop/rtf-import.js','utf8'),context);
+await elements.rtf.change();assert.equal(elements.download.hidden,false);assert.match(elements.status.textContent,/equivalents: 1/);assert.equal(elements['compatible-download'].hidden,false);
+assert.equal(await blobs[1].text(),String.raw`{\rtf1 \b eclair}`);
+elements.compatible.checked=false;await elements.compatible.change();assert.equal(elements['compatible-download'].hidden,true);assert.match(elements.status.textContent,/unchanged/);
+console.log('PASS compatibility UI reports changes, offers review copy, and preserves original-byte mode');
