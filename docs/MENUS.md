@@ -108,7 +108,7 @@ Uses the TS2068’s 512 × 192 display for finer horizontal detail. Text and pic
 
 ### ECM color view
 
-Uses the 256 × 192 extended color display. This shows individual text colors and supported picture colors. A wide document is wider than the visible ECM area, so horizontal panning is available. Switching the display mode does not itself change the document’s page width.
+Timex Extended Color Mode (ECM) displays 256 × 192 pixels with 8×1-pixel color attribute resolution: each horizontal strip of eight pixels has its own ink and paper colors. Standard SCR screens use 8×8-pixel attribute blocks, so ECM allows finer color detail while keeping two colors within each strip. This shows individual text colors and supported picture colors. A wide document is wider than the visible ECM area, so horizontal panning is available. Switching the display mode does not itself change the document’s page width.
 
 ### Color preferences
 
@@ -222,6 +222,8 @@ Individual colors are visible in ECM and included in RTF interchange. High resol
 ### Image from file
 
 Loads a supported screen image from a .tap file and opens a crop preview before insertion. Supported sources are standard SCR and ECM screen images, not arbitrary desktop JPEG or PNG files. Prepare the screen image in the appropriate .tap format, open it in Fuse, and position the input before choosing this option.
+
+Use [Retro Pixel Converter](https://factus10.github.io/retro-pixel-converter/) to generate ECM or SCR screen files from desktop images. Choose Timex Extended Color for ECM or a standard Spectrum/Timex mode for SCR. [ECMView](https://www.timexsinclair.com/computer_media/ecmview/) is a separate TS2068 viewer for ECM images; it also offers a TSPico viewer/slideshow option.
 
 At the loading prompt, Enter begins and C cancels; Space aborts an active transfer. Once loaded, the crop rectangle initially covers the full image. The preview has these controls:
 
