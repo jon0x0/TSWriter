@@ -8,6 +8,7 @@ pictures and editable RTF interchange. This is a development release.
 **[Downloads, features, keyboard reference and browser RTF tools](https://jon0x0.github.io/TSWriter/)**
 
 - [Latest cartridge and desktop fonts](https://github.com/jon0x0/TSWriter/releases/latest)
+- [Menu-by-menu guide](https://jon0x0.github.io/TSWriter/menus.html) · [Markdown version](docs/MENUS.md)
 - [Keyboard commands](docs/KEYBOARD.md)
 - [Build from source](BUILD.md)
 
