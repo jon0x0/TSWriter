@@ -41,6 +41,8 @@ For offline use, keep all `desktop/rtf-*` HTML/JavaScript files together.
 A normal native document save uses a different transport: convert it with
 `python tools/rtf_export.py saved-document.tap document.rtf`.
 
+Try the [sample RTF export](https://jon0x0.github.io/TSWriter/downloads/introexport.rtf) and [see it in LibreOffice](https://jon0x0.github.io/TSWriter/#rtf-example).
+
 Install the desktop font package before opening exports in LibreOffice. The ZIP
 includes Windows/macOS/Linux instructions, comparison samples and notices.
 
