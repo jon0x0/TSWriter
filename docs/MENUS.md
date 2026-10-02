@@ -223,7 +223,7 @@ Individual colors are visible in ECM and included in RTF interchange. High resol
 
 Loads a supported screen image from a .tap file and opens a crop preview before insertion. Supported sources are standard SCR and ECM screen images, not arbitrary desktop JPEG or PNG files. Prepare the screen image in the appropriate .tap format, open it in Fuse, and position the input before choosing this option.
 
-Use [Retro Pixel Converter](https://factus10.github.io/retro-pixel-converter/) to generate ECM or SCR screen files from desktop images. Choose Timex Extended Color for ECM or a standard Spectrum/Timex mode for SCR. [ECMView](https://www.timexsinclair.com/computer_media/ecmview/) is a separate TS2068 viewer for ECM images; it also offers a TSPico viewer/slideshow option.
+Use [Retro Pixel Converter](https://factus10.github.io/retro-pixel-converter/) to generate ECM or SCR screen files from desktop images. Choose Timex Extended Color for ECM or a standard Spectrum/Timex mode for SCR. [ECMView](https://www.timexsinclair.com/computer_media/ecmview/) is a separate TS2068 viewer for ECM images; it also offers a TSPico viewer/slideshow option. Its archive includes a number of sample Extended Color Mode images that can be imported into TSWriter.
 
 At the loading prompt, Enter begins and C cancels; Space aborts an active transfer. Once loaded, the crop rectangle initially covers the full image. The preview has these controls:
 
