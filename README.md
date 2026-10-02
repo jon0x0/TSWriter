@@ -10,6 +10,7 @@ pictures and editable RTF interchange. This is a development release.
 - [Latest cartridge and desktop fonts](https://github.com/jon0x0/TSWriter/releases/latest)
 - [Menu-by-menu guide](https://jon0x0.github.io/TSWriter/menus.html) · [Markdown version](docs/MENUS.md)
 - [Keyboard commands](docs/KEYBOARD.md)
+- [Sample native document: IntroDoc.tap](https://jon0x0.github.io/TSWriter/downloads/IntroDoc.tap) — open in Fuse, then use TSWriter’s File → Load from tape.
 - [Build from source](BUILD.md)
 
 ## Features

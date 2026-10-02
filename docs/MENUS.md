@@ -235,6 +235,10 @@ At the loading prompt, Enter begins and C cancels; Space aborts an active transf
 - Enter inserts the crop into the document.
 - C or Caps Shift + Space cancels the crop preview without inserting it.
 
+![TSWriter crop preview with a rectangle around a frog’s head](images/ImageCrop.png)
+
+Choose the part of the image to insert, then press Enter, or C to cancel.
+
 If the crop is too large for the available memory, shrink it or cancel. Text, image data and undo history share a 30 KB pool, so pictures reduce the space available for further editing.
 
 Use Style alignment to position the inserted image. Left- and right-aligned pictures allow following text beside them when sufficient width remains; centered pictures place following text underneath. High resolution renders picture tones monochromatically, while ECM retains supported colors.
