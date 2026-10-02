@@ -14,6 +14,8 @@ Selection is persistent: releasing Shift does not stop subsequent cursor movemen
 
 ## File
 
+![File menu](images/menu1.png)
+
 ### Save to tape
 
 Saves a native TSWriter document, including its text, formatting, page width and embedded pictures. Use this format when you want to continue editing on the TS2068. It is different from an RTF export.
@@ -47,6 +49,8 @@ Opens the built-in keyboard reference. It covers menus, cursor and page movement
 Displays the program’s information, year and font acknowledgement. Press Enter to return to the document. This is an information screen, not an exit command.
 
 ## Edit
+
+![Edit menu](images/menu2.png)
 
 ### Document start
 
@@ -96,6 +100,8 @@ Undo is available with both Shifts + Z, although it has no separate Edit menu it
 
 ## View
 
+![View menu](images/menu3.png)
+
 ### High resolution
 
 Uses the TS2068’s 512 × 192 display for finer horizontal detail. Text and pictures use a global ink/paper pair rather than independent text colors. Picture tones are represented with monochrome patterns. Stored text colors are retained for ECM display and RTF export.
@@ -133,6 +139,10 @@ Moves the viewport left across a wide page in ECM mode, in 64-pixel steps. Both 
 Moves the viewport right across a wide ECM page, in 64-pixel steps. Both Shifts + L is the keyboard command. Use the opposite pan command to return toward the left edge.
 
 ## Type
+
+![Type menu: first font page](images/menu4.png)
+
+![Type menu: additional fonts](images/menu5.png)
 
 Chooses the typeface for selected text or for newly typed text when there is no selection. Applying a font to a selection clears the highlight afterward. These are fixed native font sizes; there is no arbitrary size-entry dialog.
 
@@ -206,6 +216,8 @@ Opens the choices Default, Black, Blue, Red, Magenta, Green, Cyan, Yellow and Wh
 Individual colors are visible in ECM and included in RTF interchange. High resolution uses its global ink/paper pair, so differently colored text does not appear as independent colors or shades there. Color preferences in View changes the display defaults rather than recoloring a selected passage.
 
 ## Insert
+
+![Insert menu](images/menu6.png)
 
 ### Image from file
 

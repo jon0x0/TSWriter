@@ -2,3 +2,5 @@
 h1 sup{font-size:.5em;line-height:0;vertical-align:super}h1 sup a{color:inherit;text-decoration:none}
 
 .menu-guide{max-width:960px}.menu-guide h1{font-size:14pt}.menu-guide h3{margin-top:32px}.menu-guide p,.menu-guide li{max-width:78ch}.menu-guide section{padding:34px 0}.menu-toc{display:flex;flex-wrap:wrap;gap:12px 24px;margin:24px 0}.menu-guide li{margin:8px 0}
+
+.screenshot-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:28px}figure{margin:0}figure a{display:block}figure img{display:block;max-width:100%;height:auto;border:1px solid var(--line);border-radius:4px}figcaption{font-size:13px;line-height:1.5;color:#53645e;margin-top:12px}.menu-screenshots{display:flex;align-items:flex-start;flex-wrap:wrap;gap:24px;margin:20px 0 28px}.menu-screenshot{max-width:100%}.menu-screenshot img{image-rendering:pixelated}.screenshot-grid img{width:100%}header nav{flex-wrap:wrap}@media(max-width:760px){.screenshot-grid{grid-template-columns:1fr}}
