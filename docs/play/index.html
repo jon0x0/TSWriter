@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Run TSWriter · Timex Sinclair 2068</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    main{max-width:1400px}iframe{width:100%;height:700px;border:1px solid #434c5b;border-radius:12px;background:#161616}
+    main section{padding:32px 0}h1{font-size:clamp(32px,4vw,54px)}
+    .quick-keys{display:flex;gap:18px;flex-wrap:wrap}.notice{border-left:3px solid #cbac70;padding-left:16px}
+    @media(max-width:760px){iframe{height:1200px}}
+  </style>
+</head>
+<body>
+  <header><a class="brand" href="../">TS<span>Writer</span></a><nav aria-label="Main"><a href="../menus.html">Menu guide</a><a href="../#keyboard">Keyboard reference</a><a href="https://jon0x0.github.io/ts2068/">TS2068 hub</a></nav></header>
+  <main>
+    <section><p class="eyebrow">TIMEX SINCLAIR 2068 · LIVE EMULATOR</p><h1>Write on a TS2068.</h1>
+      <p class="lead">The published TSWriter cartridge loads automatically. Click the emulator, then type. Use <strong>Keys</strong> for the onscreen keyboard and <strong>Full</strong> to enlarge the display.</p>
+      <p id="player-status" role="status">Loading TSWriter…</p>
+      <iframe id="emulator" src="tsrun/index.html?url=../../downloads/writer.dck&amp;crt=0&amp;auto=0" title="TSWriter running in the TSRun emulator" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <div class="quick-keys"><p><kbd>Shift</kbd> = Caps Shift</p><p><kbd>Ctrl</kbd> = Symbol Shift</p><p><kbd>Ctrl + F</kbd> = File menu</p><p>Arrows, Enter, Backspace and Escape work directly.</p></div>
+      <p>For both Shifts, hold <kbd>Shift + Ctrl</kbd>. <kbd>Tab</kbd> in this emulator is Caps Shift + 1; the Fuse-specific Tab shortcut does not apply.</p>
+      <p class="notice">This browser session is temporary. Reset or reloading the page clears your document. Native document tape loading currently hits a compatibility error in this emulator, and tape recording is unavailable. Use Fuse and the <a href="../downloads/writer.dck" download>cartridge download</a> for document loading, saving, and RTF transfers.</p>
+      <p class="small">Emulation by <a href="https://github.com/josef-jelinek/TSRun">Josef Jelinek’s TSRun</a>. The emulator version is bundled with this site. <a href="THIRD-PARTY.md">Credits</a> · <a href="build-manifest.json">Build details</a>.</p>
+    </section>
+  </main>
+  <script src="player.js" defer></script>
+</body>
+</html>

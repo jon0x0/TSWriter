@@ -48,14 +48,36 @@ it does not certify physical hardware.
 
 ## Website
 
-GitHub Pages serves `docs/` from `main`. Preview locally with:
+GitHub Actions builds the Pages artifact from `docs/` plus a checksum-verified
+TSRun runtime. The emulator's files and system ROMs are generated under
+`build/pages/play/tsrun/`, rather than stored in the TSWriter source tree.
+Build and verify the complete site with:
 
 ```sh
-python -m http.server 8000 --directory docs
+git -c core.autocrlf=false clone https://github.com/josef-jelinek/TSRun build/tsrun
+git -C build/tsrun checkout 41dbe3e41c692a1806f2cb900c5a0faa1549ae77
+python tools/build_pages.py --tsrun build/tsrun
+npm install --ignore-scripts --no-audit --no-fund
+npx playwright install chromium
+node tests/browser_player.mjs
+python -m http.server 8000 --directory build/pages
 ```
 
 `docs/tools/` scripts must match their `desktop/` originals. Font ZIPs are
 release assets, preserving the included notices.
+
+The player uses the published `docs/downloads/writer.dck` snapshot, verified
+against `SHA256SUMS.txt`; it does not represent a new cartridge build. The
+browser regression checks cold boot, actual keyboard input into document RAM,
+backspace, menus, paragraphs, tape insertion without a reset, and reset. It
+blocks external runtime requests. Update the pinned revision and
+`tools/tsrun-lock.json` together when intentionally upgrading TSRun.
+
+Known limitation: loading the published `IntroDoc.tap` through File → Load
+from tape fails after its metadata blocks in the pinned TSRun runtime. This
+player supports editing a new document; use Fuse for document transfers.
+TSRun also does not record tape output. These are browser limitations, not
+claims about the cartridge's hardware or Fuse support.
 
 ## Homepage rich-text sample
 

@@ -27,7 +27,11 @@ Text, formatting, images and undo share a 30 KB pool.
 
 Use a TS2068-capable emulator such as Fuse with your own system ROMs. The latest
 cartridge starts with an empty document. No complete system ROM is included.
-The website provides downloads and conversion tools, not a browser emulator.
+**[Run TSWriter in your browser](https://jon0x0.github.io/TSWriter/play/)**
+uses a pinned TSRun emulator bundled in the website deployment. It supports
+typing and menus. The session is temporary; native document loading has a
+TSRun compatibility issue and browser tape recording is unavailable. Use Fuse
+for document loading, saving and RTF transfers.
 Printer output is not implemented. Complex RTF needs simplification; desktop
 font metrics and line wrapping can differ.
 
